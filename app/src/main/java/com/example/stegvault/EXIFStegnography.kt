@@ -23,7 +23,6 @@ class EXIFStegnography : AppCompatActivity() {
         }
         val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
         val viewPager = findViewById<ViewPager2>(R.id.viewPager)
-
         // Set up the adapter for ViewPager2
         viewPager.adapter = ExifPagerAdapter(this)
 
@@ -31,7 +30,6 @@ class EXIFStegnography : AppCompatActivity() {
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = if (position == 0) "Encode" else "Decode"
         }.attach()
-
         // Optional: Custom behavior for focus change on tabs
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
