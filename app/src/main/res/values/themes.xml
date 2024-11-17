@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StegVault" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+
+    <style name="Theme.StegVault" parent="Base.Theme.StegVault" />
+    <style name="Theme.Stegapp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary and secondary colors -->
+        <item name="colorPrimary">#4CAF50</item> <!-- Green color -->
+        <item name="colorPrimaryVariant">#388E3C</item> <!-- Darker green -->
+        <item name="colorSecondary">#4CAF50</item> <!-- Green accent -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White text on primary -->
+        <!-- Background color -->
+        <item name="android:colorBackground">#121212</item> <!-- Dark background -->
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">#FFFFFF</item> <!-- White text for primary -->
+        <item name="android:textColorSecondary">#BDBDBD</item> <!-- Light gray for secondary -->
+    </style>
+</resources>

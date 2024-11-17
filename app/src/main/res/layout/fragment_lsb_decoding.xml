@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/dark_background"
+        android:gravity="center">
+
+        <!-- ImageView to pick an image -->
+        <ImageView
+            android:id="@+id/ivPickImageForDecoding"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="Pick Image for Decoding"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:background="?selectableItemBackgroundBorderless" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextInputHint"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/text_input_outline_color"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeWidth="2dp"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSecretKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter secret key"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:padding="12dp"
+
+                android:background="@android:color/transparent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/tvDecodedMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decoded message will appear here"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <!-- Button to decode the message -->
+        <Button
+            android:id="@+id/btnDecodeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decode Message"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/text_primary" />
+    </LinearLayout>
+</ScrollView>

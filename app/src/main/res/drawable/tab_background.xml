@@ -1,0 +1,22 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected tab state -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/dark_background" /> <!-- Tab fill color when selected -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/green" /> <!-- Outline color when selected -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <!-- Default tab state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/dark_background" /> <!-- Tab fill color when not selected -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/green" /> <!-- Outline color when not selected -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</selector>
